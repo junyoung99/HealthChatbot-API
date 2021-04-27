@@ -50,7 +50,7 @@ AndroidManifest.xml에 다음 코드 추가.
  </pre>
  </code>
  
- * helpers - SendMessageInBg
+* helpers - SendMessageInBg
  
  <pre>
  <code>
@@ -65,6 +65,7 @@ AndroidManifest.xml에 다음 코드 추가.
   
  </pre>
  </code>
+ 
 * model - Message
  
  <pre>
@@ -98,5 +99,5 @@ AndroidManifest.xml에 다음 코드 추가.
     
    </pre>
    </code>
-
+   
 *
