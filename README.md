@@ -18,3 +18,7 @@ TT _ todaytraining은 헬스 코칭 챗봇을 제공하여 운동 방법과 효�
 
 4, Json 파일 다운로드.
 
+## Android Setting
+ //dialogFlow
+    implementation 'com.google.cloud:google-cloud-dialogflow:2.1.0'
+    implementation 'io.grpc:grpc-okhttp:1.30.0'
