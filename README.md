@@ -18,6 +18,10 @@ TT _ todaytraining은 헬스 코칭 챗봇을 제공하여 운동 방법과 효�
 
 4, Json 파일 다운로드.
 
+## Chat Intent
+
+![](https://t1.daumcdn.net/cafeattach/1YuLa/759d05028d81d9a03dec1f16bdd2b0cef697b184)
+
 ## Android Setting
 build.gradle(:app)에 다음 코드 추가.
 
@@ -50,4 +54,31 @@ AndroidManifest.xml에 다음 코드 추가.
         this.queryInput = queryInput;
     }
     
- 3, 
+ 3, model - Message
+ 
+    public class Message {
+
+    private String message;
+    private boolean isReceived;
+
+    public Message(String message) {
+        this.message = message;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public boolean getIsReceived() {
+        return isReceived;
+    }
+
+    public void setIsReceived(boolean isReceived) {
+        this.isReceived = isReceived;
+    }
+    }
+
