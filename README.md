@@ -28,3 +28,26 @@ build.gradle(:app)에 다음 코드 추가.
 AndroidManifest.xml에 다음 코드 추가.
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    
+## Chatbot Class
+1, adapter - ChatAdapter
+
+    private List<Message> messageList;
+    private Activity activity;
+
+    public ChatAdapter(List<Message> messageList, Activity activity) {
+        this.messageList = messageList;
+        this.activity = activity;
+    }
+    
+2, helpers - SendMessageInBg
+
+    public SendMessageInBg(BotReply botReply, SessionName session, SessionsClient sessionsClient,
+                           QueryInput queryInput) {
+        this.botReply = botReply;
+        this.session = session;
+        this.sessionsClient = sessionsClient;
+        this.queryInput = queryInput;
+    }
+    
+ 3, 
