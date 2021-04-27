@@ -111,3 +111,33 @@ AndroidManifest.xml에 다음 코드 추가.
 
 </pre>
 </code>
+
+## TodayTraining Json API
+1, 안드로이드에서 res에 raw라는 폴더를 만듭니다.
+
+2, raw 폴더에 json파일을 넣어 줍니다.
+
+3, json name을 입력합니다.
+
+    private void setUpBot() {
+            try {
+                InputStream stream = this.getResources().openRawResource(R.raw.todaytraining); //json name
+                GoogleCredentials credentials = GoogleCredentials.fromStream(stream)
+                        .createScoped(Lists.newArrayList("https://www.googleapis.com/auth/cloud-platform"));
+                String projectId = ((ServiceAccountCredentials) credentials).getProjectId();
+
+                SessionsSettings.Builder settingsBuilder = SessionsSettings.newBuilder();
+                SessionsSettings sessionsSettings = settingsBuilder.setCredentialsProvider(
+                    FixedCredentialsProvider.create(credentials)).build();
+                    sessionsClient = SessionsClient.create(sessionsSettings);
+                    sessionName = SessionName.of(projectId, uuid);
+                }
+        }
+
+4, 언어를 한국어로 설정합니다.
+
+    private void sendMessageToBot(String message) {
+         QueryInput input = QueryInput.newBuilder()
+                    .setText(TextInput.newBuilder().setText(message).setLanguageCode("ko")).build(); // korean
+            new SendMessageInBg(this, sessionName, sessionsClient, input).execute();
+        }
