@@ -21,6 +21,7 @@ TT _ todaytraining은 헬스 코칭 챗봇을 제공하여 운동 방법과 효�
 ## Chat Intent
 
 업로드 된 TTchatbot.xlsx 내용 참조.
+
 ![](https://t1.daumcdn.net/cafeattach/1YuLa/759d05028d81d9a03dec1f16bdd2b0cef697b184)
 
 ## Android Setting
