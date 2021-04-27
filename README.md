@@ -112,7 +112,7 @@ AndroidManifest.xml에 다음 코드 추가.
 </pre>
 </code>
 
-## TodayTraining Json API
+## TodayTraining Json API 실행방법
 1, 안드로이드에서 res에 raw라는 폴더를 만듭니다.
 
 2, raw 폴더에 json파일을 넣어 줍니다.
