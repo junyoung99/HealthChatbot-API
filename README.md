@@ -96,7 +96,6 @@ AndroidManifest.xml에 다음 코드 추가.
         this.isReceived = isReceived;
     }
     }
-    
 </pre>
 </code>
 
