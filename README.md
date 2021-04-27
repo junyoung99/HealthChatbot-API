@@ -1,5 +1,5 @@
 # :muscle: HealthChatbot-API
-![](https://img.shields.io/cocoapods/p/dialogflow)
+![](https://img.shields.io/badge/platform-Dialogflow-red)
 
 ![](https://t1.daumcdn.net/cafeattach/1YuLa/7597d94a907f5214bcee86672cd738f98ef43bee)
 
