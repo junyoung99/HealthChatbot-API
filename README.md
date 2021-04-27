@@ -49,6 +49,7 @@ AndroidManifest.xml에 다음 코드 추가.
  
 </pre>
 </code> 
+
 * helpers - SendMessageInBg
  
 <pre>
