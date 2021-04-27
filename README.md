@@ -49,7 +49,9 @@ AndroidManifest.xml에 다음 코드 추가.
  
  </pre>
  </code>
-* helpers - SendMessageInBg
+ 
+ * helpers - SendMessageInBg
+ 
  <pre>
  <code>
 
@@ -63,10 +65,12 @@ AndroidManifest.xml에 다음 코드 추가.
   
  </pre>
  </code>
- * model - Message
+ 
+* model - Message
  
  <pre>
  <code>
+ 
     public class Message {
 
     private String message;
@@ -92,7 +96,8 @@ AndroidManifest.xml에 다음 코드 추가.
         this.isReceived = isReceived;
     }
     }
-     </pre>
-    </code>
+    
+   </pre>
+   </code>
 
-4, 
+*
