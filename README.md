@@ -37,8 +37,8 @@ AndroidManifest.xml에 다음 코드 추가.
     
 ## Chatbot Class
 * adapter - ChatAdapter
- <pre>
- <code>
+<pre>
+<code>
  
         private List<Message> messageList;
         private Activity activity;
@@ -47,12 +47,13 @@ AndroidManifest.xml에 다음 코드 추가.
             this.activity = activity;
         }
  
- </pre>
- </code> 
+</pre>
+</code>
+ 
 * helpers - SendMessageInBg
  
- <pre>
- <code>
+<pre>
+<code>
 
     public SendMessageInBg(BotReply botReply, SessionName session, SessionsClient sessionsClient,
                            QueryInput queryInput) {
@@ -62,12 +63,13 @@ AndroidManifest.xml에 다음 코드 추가.
         this.queryInput = queryInput;
     }
   
- </pre>
- </code> 
+</pre>
+</code>
+
 * model - Message
  
- <pre>
- <code>
+<pre>
+<code>
  
     public class Message {
 
@@ -95,6 +97,7 @@ AndroidManifest.xml에 다음 코드 추가.
     }
     }
     
-   </pre>
-   </code>   
+</pre>
+</code>
+
 *
