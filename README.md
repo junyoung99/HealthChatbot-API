@@ -2,7 +2,7 @@
 ![](https://img.shields.io/badge/platform-Dialogflow-red)
 ![](https://img.shields.io/badge/platform-Android-green)
 
-![](https://t1.daumcdn.net/cafeattach/1YuLa/7597d94a907f5214bcee86672cd738f98ef43bee)
+![](https://t1.daumcdn.net/cafeattach/1YuLa/f56d04afb78509911b5c6a45b3a782708d5266ce)
 
 TT _ todaytraining은 헬스 코칭 챗봇을 제공하여 운동 방법과 효과를 알려주고 식단을 추천해 줍니다.
 
