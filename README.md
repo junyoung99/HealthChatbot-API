@@ -20,6 +20,7 @@ TT _ todaytraining은 헬스 코칭 챗봇을 제공하여 운동 방법과 효�
 
 ## Chat Intent
 
+업로드 된 TTchatbot.xlsx 내용 참조.
 ![](https://t1.daumcdn.net/cafeattach/1YuLa/759d05028d81d9a03dec1f16bdd2b0cef697b184)
 
 ## Android Setting
@@ -34,17 +35,22 @@ AndroidManifest.xml에 다음 코드 추가.
     <uses-permission android:name="android.permission.INTERNET"/>
     
 ## Chatbot Class
-1, adapter - ChatAdapter
-
-    private List<Message> messageList;
-    private Activity activity;
-
-    public ChatAdapter(List<Message> messageList, Activity activity) {
-        this.messageList = messageList;
-        this.activity = activity;
-    }
-    
-2, helpers - SendMessageInBg
+* adapter - ChatAdapter
+ <pre>
+ <code>
+ 
+        private List<Message> messageList;
+        private Activity activity;
+        public ChatAdapter(List<Message> messageList, Activity activity) {
+            this.messageList = messageList;
+            this.activity = activity;
+        }
+ 
+ </pre>
+ </code>
+* helpers - SendMessageInBg
+ <pre>
+ <code>
 
     public SendMessageInBg(BotReply botReply, SessionName session, SessionsClient sessionsClient,
                            QueryInput queryInput) {
@@ -53,9 +59,13 @@ AndroidManifest.xml에 다음 코드 추가.
         this.sessionsClient = sessionsClient;
         this.queryInput = queryInput;
     }
-    
- 3, model - Message
+  
+ </pre>
+ </code>
+ * model - Message
  
+ <pre>
+ <code>
     public class Message {
 
     private String message;
@@ -81,4 +91,7 @@ AndroidManifest.xml에 다음 코드 추가.
         this.isReceived = isReceived;
     }
     }
+     </pre>
+    </code>
 
+4, 
