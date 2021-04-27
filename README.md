@@ -99,4 +99,15 @@ AndroidManifest.xml에 다음 코드 추가.
 </pre>
 </code>
 
-*
+* interface - BotReply
+
+<pre>
+<code>
+
+        public interface BotReply {
+
+            void callback(DetectIntentResponse returnResponse);
+        }
+
+</pre>
+</code>
